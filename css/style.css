@@ -56,10 +56,18 @@ body {
 
 .nav-link-active {
     font-weight: 600;
-    border-bottom: 3px solid #0083FE;
+    border-bottom: 3px solid #ff5050;
 }
 
 .scrolled-nav {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    -webkit-box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.78);
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.78);
+    background-color: salmon;
+}
+
+.small-screen-nav {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
     -webkit-box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.78);
@@ -74,28 +82,100 @@ body {
 .jumbotron {
     padding-top: 120px !important;
     width: auto;
-    height: 75vh;
-    background-image: url('../img/banner/banner.jpg') !important;
+    height: 450px;
+    background-image: linear-gradient(0deg, rgba(138, 0, 0, 1) 0%, rgba(201, 7, 7, 0.8) 100%), url('../img/banner/banner.jpg') !important;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    color: white !important;
+    font-family: 'Montserrat' !important;
+    letter-spacing: 2px;
+    line-height: 2;
 }
 
-.banner-overlay:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(180deg, rgba(9, 0, 0, 0.85) 0%, rgba(243, 255, 255, 0.3) 96%);
+.jumbotron hr {
+    border-color: salmon;
+}
+
+.jumbotron-quote {
+    letter-spacing: 4px;
+    font-size: 1.2em;
 }
 
 .jumbotron .btn {
-    background: salmon;
+    background: #6F0000;
     color: white;
-    /*font-weight: bold;*/
+    border-radius: 10px;
+    border: 1.5px red solid;
+    transition: all 1s ease;
+    -webkit-box-shadow: -2px 0px 10px rgba(220, 22, 22, 1);
+    box-shadow: -2px 0px 10px rgba(220, 22, 22, 1);
+}
+
+.jumbotron .btn:hover {
+    background: #e1e1e1;
+    color: #cd2027;
+    -webkit-text-shadow: -2px 0px 10px rgba(120, 120, 120, 1);
+    text-shadow: -2px 0px 10px rgba(120, 120, 120, 1);
 }
 
 /*END OF BANNER*/
+/*================================================================*/
+
+/*ABOUT*/
+.about {
+    background: #f9f9f9;
+}
+
+.about-title-text p {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.about-item-box {
+    border-radius: 10px;
+    padding: 25px;
+    height: 18em;
+    /*border: 1px solid grey;*/
+    margin: 10px 5px;
+    transition: all 0.3s ease-in;
+}
+
+.about-item-icon {
+    transition: all 0.3s ease-in;
+}
+
+.about-item-box:hover {
+    background: #fbfbfb;
+    -webkit-box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.78);
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.78);
+}
+
+.about-item-box:hover .about-item-icon {
+    transform: scale(1.3);
+}
+
+.about-item-icon i {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.about-item-title {
+    text-transform: uppercase;
+    color: #CD2027;
+    font-weight: bold;
+    padding-bottom: 10px;
+    letter-spacing: 3.5px;
+    font-size: 20px;
+}
+
+.about-item-text {
+    font-family: 'gupter';
+    letter-spacing: 2px;
+    line-height: 2;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+/*END OF ABOUT*/
 /*================================================================*/
