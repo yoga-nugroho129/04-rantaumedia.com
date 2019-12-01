@@ -98,25 +98,30 @@ body {
 }
 
 .jumbotron-quote {
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     font-size: 1.2em;
 }
 
-.jumbotron .btn {
-    background: #6F0000;
-    color: white;
+.cta-btn {
+    background: #6F0000 !important;
+    color: white !important;
     border-radius: 10px;
-    border: 1.5px red solid;
+    border: 1.5px salmon solid !important;
     transition: all 1s ease;
     -webkit-box-shadow: -2px 0px 10px rgba(220, 22, 22, 1);
     box-shadow: -2px 0px 10px rgba(220, 22, 22, 1);
+    min-width: 170px;
 }
 
-.jumbotron .btn:hover {
-    background: #e1e1e1;
-    color: #cd2027;
+.cta-btn:hover {
+    background: #e1e1e1 !important;
+    color: #cd2027 !important;
     -webkit-text-shadow: -2px 0px 10px rgba(120, 120, 120, 1);
     text-shadow: -2px 0px 10px rgba(120, 120, 120, 1);
+}
+
+.jumbotron-small-text {
+    font-size: 16px !important;
 }
 
 /*END OF BANNER*/
@@ -125,6 +130,7 @@ body {
 /*ABOUT*/
 .about {
     background: #f9f9f9;
+    max-width: 100%;
 }
 
 .about-title-text p {
@@ -135,47 +141,228 @@ body {
 .about-item-box {
     border-radius: 10px;
     padding: 25px;
-    height: 18em;
-    /*border: 1px solid grey;*/
+    height: 18.3em;
     margin: 10px 5px;
     transition: all 0.3s ease-in;
 }
 
-.about-item-icon {
-    transition: all 0.3s ease-in;
-}
-
 .about-item-box:hover {
-    background: #fbfbfb;
-    -webkit-box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.78);
-    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.78);
+    background: #fdfdfd;
+    -webkit-box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.78);
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.78);
+    box-sizing: border-box;
 }
 
 .about-item-box:hover .about-item-icon {
-    transform: scale(1.3);
+    transform: scale(1.4);
+    color: #CD2027;
 }
 
-.about-item-icon i {
+.about-item-box:hover .about-item-title {
+    letter-spacing: 5.5px;
+}
+
+.about-item-icon {
     font-size: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in;
 }
 
 .about-item-title {
     text-transform: uppercase;
     color: #CD2027;
     font-weight: bold;
-    padding-bottom: 10px;
-    letter-spacing: 3.5px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
     font-size: 20px;
+    transition: all 0.3s ease-in;
 }
 
 .about-item-text {
     font-family: 'gupter';
-    letter-spacing: 2px;
-    line-height: 2;
-    padding-bottom: 10px;
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+    padding-bottom: 5px;
     font-size: 17px;
+    color: #898989;
 }
 
 /*END OF ABOUT*/
+/*================================================================*/
+
+/*CTA*/
+.cta {
+    height: 40vh;
+    background-image: linear-gradient(0deg, rgba(138, 0, 0, 1) 0%, rgba(201, 7, 7, 0.8) 100%), url('../img/cta/cta.jpg') !important;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white !important;
+    font-family: 'Montserrat' !important;
+}
+
+.cta .container {
+    height: 40vh;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-text {
+    letter-spacing: 4px;
+    font-size: 2em;
+    margin: 0 !important;
+}
+
+/*END OF CTA*/
+/*================================================================*/
+
+/*PROCESS*/
+.process {
+    background: white;
+}
+
+.process-single-item {
+    /*border: 1px solid red;*/
+    padding: 25px 40px !important;
+    transition: all 0.3s ease-in;
+}
+
+.process-title {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 0 !important;
+}
+
+.process-subtitle {
+    font-size: 1.2em;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+    color: #898989;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.process-icon {
+    position: absolute;
+    font-size: 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.process-item-title {
+    font-size: 1.3em;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    color: #CD2027;
+    transition: all 0.3s ease-in;
+}
+
+.process-single-item:hover {
+    background: salmon;
+}
+
+.process-single-item:hover .process-item-text {
+    color: white;
+}
+
+.process-single-item:hover .process-icon {
+    -webkit-text-shadow: -2px 0px 10px rgba(255, 200, 200, 1);
+    text-shadow: -2px 0px 10px rgba(255, 200, 200, 1);
+}
+
+.process-item-text {
+    font-weight: 200;
+    font-family: 'gupter';
+    letter-spacing: 5px;
+    line-height: 1.5;
+    color: #898989;
+}
+
+/*END OF PROCESS*/
+/*================================================================*/
+
+/*CONTACT*/
+.contact {
+    background: #f9f9f9;
+    padding-top: 50px;
+}
+
+.contact-item {
+    margin-bottom: 35px;
+}
+
+.contact-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #CD2027;
+    letter-spacing: 10px;
+}
+
+.contact-text {
+    font-size: 1.1em;
+    color: #898989;
+    letter-spacing: 3px;
+    line-height: 1.3;
+}
+
+.form-control {
+    /*display: block;*/
+    /*width: 100%;*/
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid #CD2027 !important;
+    outline: none !important;
+    padding: 1.3rem 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.form-control::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #898989;
+}
+
+.send-btn {
+    text-transform: uppercase !important;
+    height: auto;
+    border: 1.5px salmon solid !important;
+}
+
+.send-btn p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-weight: bold !important;
+}
+
+/*END OF CONTACT*/
+/*================================================================*/
+
+/*FOOTER*/
+footer {
+    /*height: 50px;*/
+    background: linear-gradient(0deg, rgba(138, 0, 0, 1) 0%, rgba(201, 7, 7, 0.8) 100%);
+    padding: 15px auto;
+    text-align: center;
+    margin: 0 !important;
+    color: white;
+    letter-spacing: 5px;
+}
+
+footer p {
+    margin-bottom: 0 !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+/*END OF FOOTER*/
 /*================================================================*/

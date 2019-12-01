@@ -24,7 +24,7 @@
         <!-- Image and text -->
         <a class="navbar-brand" href="#" style="font-weight: bold;">
             <img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
-            <span class="media-text" id="red-text">RANTAU</span><span class="media-text">MEDIA.COM</span>
+            <span class="media-text" id="red-text">RANTAUMEDIA.COM</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="navbar-toggler-icon fas fa-bars" style="color: white;"></i>
@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item" id="about-pos">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#about">
                         about us
                     </a>
                 </li>
@@ -59,59 +59,61 @@
     <!-- BANNER -->
     <div class="jumbotron my-jumbotron text-center rounded-0">
         <h1 class="display-4"><strong>WELCOME!</strong></h1>
-        <p class="lead my-2">We Are Small <span style="font-weight: 600;">Digital Marketing Agency</span> Team
-            <br>Based in Indonesia Archipelago with <span style="font-weight: 600;">Big Vision</span></p>
+        <p class="lead my-2" id="jumbotron-sm-title">
+            We Are Small <span style="font-weight: 600;">Digital Marketing Agency</span> Team<br>Based in Indonesia Archipelago with <span style="font-weight: 600;">Big Vision</span>
+        </p>
         <hr>
-        <p class="jumbotron-quote">PROFESSIONAL <i class="fas fa-angle-double-right"></i> FRIENDLY <i class="fas fa-angle-double-right"></i> SUITABLE</p>
-        <a class="btn btn-lg" href="#" role="button">Contact Us</a>
+        <p class="jumbotron-quote" id="jumbotron-sm-quote">PROFESSIONAL <i class="fas fa-angle-double-right"></i> FRIENDLY <i class="fas fa-angle-double-right"></i> SUITABLE</p>
+        <a class="btn btn-lg cta-btn" href="#" role="button">Contact Us</a>
     </div>
     <!-- END OF BANNER -->
     <!-- ==================================================================== -->
     <!-- PORTFOLIO -->
-    <section class="empty-content" style="height: 120px;"></section>
+    <section class="empty-content" style="height: 200px;"></section>
     <!-- END OF PORTFOLIO -->
     <!-- ==================================================================== -->
     <!-- ABOUT -->
-    <section class="about py-4">
+    <section class="about py-4" id="about">
         <div class="container text-center">
             <div class="row about-title py-3">
                 <div class="col">
                     <div class="about-title-text">
                         <p>This is What <span style="font-weight: bold;">We Do Best</span></p>
+                        <hr style="border-color: salmon;">
                     </div>
                 </div>
             </div>
-            <div class="row about-items">
+            <div class="row about-items justify-content-center">
                 <!-- About item #1 -->
-                <div class="col-lg-6 about-single-item text-center">
-                    <div class="about-item-box">
+                <div class="col-lg-6 about-single-item justify-content-center">
+                    <div class="about-item-box text-center">
                         <div class="col about-item-icon"><i class="fas fa-vr-cardboard"></i></div>
                         <div class="col about-item-title">Visual Creator</div>
-                        <div class="col about-item-text">Many companies now decide to communicate facts and figures through images, because they speak louder than words.</div>
+                        <div class="col about-item-text" id="about-description">Many companies now decide to communicate facts and figures through images, because they speak louder than words.</div>
                     </div>
                 </div>
                 <!-- About item #2 -->
-                <div class="col-lg-6 about-single-item text-center">
-                    <div class="about-item-box">
+                <div class="col-lg-6 about-single-item justify-content-center">
+                    <div class="about-item-box text-center">
                         <div class="col about-item-icon"><i class="far fa-newspaper"></i></div>
                         <div class="col about-item-title">Media Buying</div>
-                        <div class="col about-item-text">Today, more and more consumers use the internet to search for the products or services they need. Your small business will gain credibility with promotion through internet.</div>
+                        <div class="col about-item-text" id="about-description">Today, more and more consumers use the internet to search for the products or services they need. Your small business will gain credibility with promotion through internet.</div>
                     </div>
                 </div>
                 <!-- About item #3 -->
-                <div class="col-lg-6 about-single-item text-center">
-                    <div class="about-item-box">
+                <div class="col-lg-6 about-single-item justify-content-center">
+                    <div class="about-item-box text-center">
                         <div class="col about-item-icon"><i class="fas fa-mobile-alt"></i></div>
                         <div class="col about-item-title">Mobile Apps</div>
-                        <div class="col about-item-text">Today you’ll notice that many small businesses you interact with in your everyday life have their own dedicated mobile apps. These companies are ahead of the game when it comes to taking their marketing to the next level.</div>
+                        <div class="col about-item-text" id="about-description">Today you’ll notice that many small businesses you interact with in your everyday life have their own dedicated mobile apps. These companies are ahead of the game when it comes to taking their marketing to the next level.</div>
                     </div>
                 </div>
                 <!-- About item #4 -->
-                <div class="col-lg-6 about-single-item text-center">
-                    <div class="about-item-box">
+                <div class="col-lg-6 about-single-item justify-content-center">
+                    <div class="about-item-box text-center">
                         <div class="col about-item-icon"><i class="fas fa-chart-line"></i></div>
                         <div class="col about-item-title">Development</div>
-                        <div class="col about-item-text">Companies need more than good products to survive; they require innovative processes and management that can drive down costs and improve productivity.</div>
+                        <div class="col about-item-text" id="about-description">Companies need more than good products to survive; they require innovative processes and management that can drive down costs and improve productivity.</div>
                     </div>
                 </div>
             </div>
@@ -119,6 +121,180 @@
     </section>
     <!-- END OF ABOUT -->
     <!-- ==================================================================== -->
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-text">
+                <p>Let's Talk About <span style="font-weight: bold;">Improving</span> Your <span style="font-weight: bold;">Bussiness, Today!</span></p>
+            </div>
+            <a class="btn btn-lg cta-btn" href="#" role="button" style="width: 170px !important;">Contact Us</a>
+        </div>
+    </section>
+    <!-- END OF CTA -->
+    <!-- ==================================================================== -->
+    <!-- PROCESS -->
+    <section class="process my-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 process-single-title p-5">
+                    <div class="process-title">
+                        <p style="font-weight: 200;">See Us at <span style="font-weight: bold; color: #CD2027;">Our Work</span></p>
+                        <hr style="border-color: salmon;">
+                    </div>
+                    <div class="process-subtitle">
+                        <p>Because Victory Needs Preparation So These Are What We Do For Your Company.</p>
+                    </div>
+                </div>
+                <!-- Process Item #1 -->
+                <div class="col-lg-4 col-md-6 process-single-item process-grid-1">
+                    <div class="process-item-title">
+                        <p>Listening to Your Needs</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 icon-wrapper">
+                            <div class="process-icon"><i class="fas fa-hands"></i></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="process-item-text">
+                                <p>Understanding the difference between a customer’s wants and needs is a major key to succeeding in business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Process Item #2 -->
+                <div class="col-lg-4 col-md-6 process-single-item process-grid-1">
+                    <div class="process-item-title">
+                        <p>project discovery</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 icon-wrapper">
+                            <div class="process-icon"><i class="fab fa-phabricator"></i></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="process-item-text">
+                                <p>Discovering strategies and techniques to growth your business profit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Process Item #3 -->
+                <div class="col-lg-4 col-md-6 process-single-item process-grid-1">
+                    <div class="process-item-title">
+                        <p>Storming our brains</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 icon-wrapper">
+                            <div class="process-icon"><i class="fas fa-brain"></i></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="process-item-text">
+                                <p>Brainstorming helps us develop creative solutions for any problem, and is particularly useful when we need to break out of stale thinking patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Process Item #4 -->
+                <div class="col-lg-4 col-md-6 process-single-item process-grid-1">
+                    <div class="process-item-title">
+                        <p>Getting there</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 icon-wrapper">
+                            <div class="process-icon"><i class="fas fa-plane-arrival"></i></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="process-item-text">
+                                <p>We believe that Action is the foundational key to all success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Process Item #5 -->
+                <div class="col-lg-4 col-md-6 process-single-item process-grid-1">
+                    <div class="process-item-title">
+                        <p>Delivering the product</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 icon-wrapper">
+                            <div class="process-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="process-item-text">
+                                <p>Not just delivering the product but we will give added value and satisfaction for clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF PROCESS -->
+    <!-- ==================================================================== -->
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="container">
+            <div class="about-title-text text-center">
+                <p>Leave Us a <span style="font-weight: bold;">Message</span></p>
+                <div class="process-subtitle" style="font-size: 0.7em;">
+                    <p>You can find us literally anywhere, just push a button and we’re there</p>
+                </div>
+                <hr style="border-color: salmon;">
+            </div>
+            <div class="row my-4">
+                <!-- contact display -->
+                <div class="col-md-6 contact-description">
+                    <!-- item #1 -->
+                    <div class="contact-item">
+                        <h3 class="contact-title">
+                            <span class="contact-icon"><i class="fas fa-location-arrow"></i></span> Address
+                        </h3>
+                        <h3 class="contact-text">Indonesia, Yogyakarta | Zip Code 55283</h3>
+                    </div>
+                    <!-- item #2 -->
+                    <div class="contact-item">
+                        <h3 class="contact-title">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span> Email
+                        </h3>
+                        <h3 class="contact-text">hariman@rantaumedia.com</h3>
+                    </div>
+                    <!-- item #3 -->
+                    <div class="contact-item">
+                        <h3 class="contact-title">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span> Phone
+                        </h3>
+                        <h3 class="contact-text">+62 1364 8927 55</h3>
+                    </div>
+                </div>
+                <!-- contact form -->
+                <div class="col-md-6 contact-form">
+                    <article action="http://formspree,io/yoga.nugroho129@gmail.com" method="POST" class="contact-form">
+                        <form action="" class="form-group">
+                            <div class="row">
+                                <div class="col pl-1">
+                                    <input type="text" name="name" placeholder="name" class="form-control rounded-0">
+                                </div>
+                                <div class="col pr-1">
+                                    <input type="email" name="email" placeholder="email" class="form-control rounded-0">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="text" name="location" placeholder="location" class="form-control rounded-0">
+                                <textarea name="message" rows="5" placeholder="message" class="form-control rounded-0"></textarea>
+                                <button type="submit" class="main-btn cta-btn send-btn">
+                                    <p class="text-center">send</p>
+                                </button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF CONTACT -->
+    <!-- ==================================================================== -->
+    <footer>
+        <p>Copyright &copy; 2019 - rantaumedia.com<br>Design & Develop by Yoga Isnaini Nugroho</p>
+    </footer>
     <!-- my js -->
     <script src="js/script.js"></script>
     <!-- bootsrap script -->

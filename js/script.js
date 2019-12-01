@@ -20,14 +20,25 @@ $(document).ready(function() {
 
     });
 
-    var screenWidth = $(window).width();
-    $(window).on('resize', function() {
-        if (screenWidth < 1091) {
-            $('#home-nav-scroll').addClass('small-screen-nav');
-            $('#home-nav-scroll').removeClass('bg-transparent');
+    // var screenWidth = $(window).width();
+    // $(window).on('resize', function() {
+    //     if (screenWidth < 1091) {
+    //         $('#home-nav-scroll').addClass('small-screen-nav');
+    //         $('#home-nav-scroll').removeClass('bg-transparent');
+    //     } else {
+    //         $('#home-nav-scroll').removeClass('small-screen-nav');
+    //         $('#home-nav-scroll').addClass('bg-transparent');
+    //     }
+    // });
+
+    var screenWidth = $(document).width();
+    $(document).on('resize', function() {
+        if (screenWidth < 600) {
+            $('#jumbotron-sm-tile').addClass('jumbotron-small-text');
+            $('#jumbotron-sm-quote').addClass('jumbotron-small-text');
         } else {
-            $('#home-nav-scroll').removeClass('small-screen-nav');
-            $('#home-nav-scroll').addClass('bg-transparent');
+            $('#jumbotron-sm-tile').removeClass('jumbotron-small-text');
+            $('#jumbotron-sm-quote').removeClass('jumbotron-small-text');
         }
     });
 
