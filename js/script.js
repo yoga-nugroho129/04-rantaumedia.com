@@ -14,6 +14,7 @@ $(document).ready(function() {
             $('#red-text').addClass('media-text');
         }
         //END OF SCROLLED NAVBAR //
+        // ============================================= //
 
         // NAVBAR ACTIVE SECTION //
         if (scrollValue < 280) {
@@ -48,10 +49,11 @@ $(document).ready(function() {
             $('#process-pos').removeClass('nav-link-active');
         }
 
-        console.log(scrollValue);
+        // console.log(scrollValue);
 
     });
     // NAVBAR ACTIVE SECTION //
+    // ============================================= //
 
     // PORTFOLIO CAROUSEL //
     $('.customer-logos').slick({
@@ -75,17 +77,29 @@ $(document).ready(function() {
         }]
     });
     // ENF OF PORTFOLIO CAROUSEL //
+    // ============================================= //
 
+    // SMOOTH SCROLL //
+    $('.page-scroll').on('click', function(e) {
+        var hrefTarget = $(this).attr('href');
+        var sectionTarget = $(hrefTarget);
 
-    // page smooth scroll //
-    // $('.page-scroll').on('click', function(e) {
-    //     var tujuan = $(this).attr('href');
-    //     var elemenTujuan = $(tujuan);
+        // $('body').animate({
+        //     scrollTop: sectionTarget.offset().top - 50
+        // }, 1000, 'swing');
 
-    //     $('body').scrollTop('500');
+        e.preventDefault();
+    });
 
-    //     e.preventDefault();
-    // });
+    $('.about-click').click(function(e) {
+        // var hrefTarget = $(this).attr('href');
+        // var sectionTarget = $(hrefTarget);
+        $('body').animate({
+            scrollTop: $('#body').offset()
+        }, 1000);
+        e.preventDefault();
+    });
 
 });
+
 // <============== END OF JQuery ==============> //
